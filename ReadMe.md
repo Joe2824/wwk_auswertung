@@ -8,7 +8,9 @@
   <h3 align="center">Wellenwettkampf Auswertung</h3>
 
   <p align="center">
-    Programm zur vereinfachung der Auswertung beim DLRG Ortsgruppe Dorheim e.V. Wellenwettkampf in Bad Nauheim.
+    Programm zur vereinfachung der Auswertung beim
+    <br />
+    DLRG Ortsgruppe Dorheim e.V. Wellenwettkampf in Bad Nauheim.
     <br />
     <a href="https://github.com/Joe2824/wwk_auswertung/issues">Bug melden</a>
     ·
