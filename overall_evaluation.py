@@ -6,7 +6,7 @@ DEBUG = False
 SUBTRACT_NOT_STARTED = True
 
 
-def calculate_function(filename):
+def calculate(filename):
     df = pd.read_excel(filename, sheet_name=None, skiprows=[1])
 
     wave_table = pd.DataFrame()
