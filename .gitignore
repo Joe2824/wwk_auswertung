@@ -1,0 +1,6 @@
+__pycache__
+generate_settings.json
+test
+*.code-workspace
+*.xlsx
+.DS_Store
