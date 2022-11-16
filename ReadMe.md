@@ -39,9 +39,10 @@
 ## Roadmap
 
 - [x] Gesamtauswertung
-- [ ] Urkunden Druck vereinfachen durch vorsortieren der Urkunden
-- [ ] Alle Altersklassen ab AK 13/14 für Welle auswählbar machen
-- [ ] Mannschaftsnamen normieren nach Orsgruppe und Anzahl der Mannschaften
+- [x] Urkunden Druck vereinfachen durch vorsortieren der Urkunden
+- [ ] Wettkampf Vorbereitung vereinfachen
+  - [ ] Alle Altersklassen ab AK 13/14 für Welle auswählbar machen
+  - [ ] Mannschaftsnamen normieren nach Orsgruppe und Anzahl der Mannschaften
 
 
 <!-- Lizenz -->

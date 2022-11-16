@@ -11,7 +11,8 @@ from pathlib import Path
 import tkinter as tk
 from tkinter import filedialog
 
-import calculate
+import overall_evaluation
+import sort_certificate
 
 gui = tk.Tk()
 
@@ -119,10 +120,11 @@ def generate_overall_evaluation():
         return
 
     try:
-        wave_table, rescure_table, wave_table_detail, rescure_table_detail = calculate.calculate_function(file)
+        wave_table, rescure_table, wave_table_detail, rescure_table_detail = overall_evaluation.calculate(file)
+        sort_table = sort_certificate.sort(file)
 
         op = outputPath.get() if outputPath.get() else Path().resolve()
-        fn = f'{name}_Gesamtwertung.xlsx' if name else 'Gesamtwertung.xlsx'
+        fn = f'{name}_Auswertung.xlsx' if name else 'Auswertung.xlsx'
         file_path = os.path.join(op, fn)
 
         with pd.ExcelWriter(file_path, engine='xlsxwriter') as writer:
@@ -131,7 +133,7 @@ def generate_overall_evaluation():
             if exportDetail.get():
                 rescure_table_detail.to_excel(writer, sheet_name='Detail Rettungswertung')
                 wave_table_detail.to_excel(writer, sheet_name='Detail Wellenwertung')
-
+            sort_table.to_excel(writer, sheet_name='Urkunden Druck')
         logger.warning(f'✔️  EXPORT ERFOLGREICH!\nGespeichert unter: {file_path}')
         print(f'✔️  EXPORT ERFOLGREICH!\nGespeichert unter: {file_path}')
 
@@ -183,7 +185,7 @@ nameLabel.pack(side='left', padx='5', pady='5')
 nameEntry = tk.Entry(master=frame_OutputName, textvariable=customName)
 nameEntry.pack(side='left', padx='5', pady='5', fill='x', expand=True)
 
-nameLabelAddition = tk.Label(master=frame_OutputName, text='_Gesamtauswertung.xlsx', width=20)
+nameLabelAddition = tk.Label(master=frame_OutputName, text='_Auswertung.xlsx', width=20)
 nameLabelAddition.pack(side='left', pady='5')
 
 exportDetailCb = tk.Checkbutton(master=frame_DetailExport, variable=exportDetail, text='Detail Export', textvariable='Detail Export')
