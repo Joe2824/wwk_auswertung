@@ -25,9 +25,9 @@
    git clone https://github.com/github_username/repo_name.git
    ```
 3. Python requirements installieren
-  ```sh
-  pip3 install -r requirements.txt
-  ```
+   ```sh
+   pip3 install -r requirements.txt
+   ```
 4. Prorgamm starten
    ```sh
    python3 run_gui.py
@@ -37,7 +37,6 @@
 ## Roadmap
 
 - [x] Gesamtauswertung
-
 - [ ] Urkunden Druck vereinfachen durch vorsortieren der Urkunden
 - [ ] Alle Altersklassen ab AK 13/14 für Welle auswählbar machen
 - [ ] Mannschaftsnamen normieren nach Orsgruppe und Anzahl der Mannschaften
@@ -45,7 +44,8 @@
 
 <!-- Lizenz -->
 ## Lizenz
-
 Veröffentlich unter MIT Lizenz. Siehe `LICENSE.txt` für mehr Informationen.
+
+
 
 [Python]: https://img.shields.io/badge/python-000000?style=for-the-badge&logo=python&logoColor=white
