@@ -3,4 +3,5 @@ generate_settings.json
 test
 *.code-workspace
 *.xlsx
+*.xls
 .DS_Store
