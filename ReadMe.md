@@ -25,7 +25,7 @@
    git clone https://github.com/github_username/repo_name.git
    ```
 3. Python requirements installieren
-   ```sh
+  ```sh
   pip3 install -r requirements.txt
   ```
 4. Prorgamm starten
