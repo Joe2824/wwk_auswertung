@@ -2,7 +2,7 @@ import re
 import pandas as pd
 
 age_groups = ['AK 10', 'AK 12', 'AK 13/14', 'AK 15/16', 'AK 17/18', 'AK offen', 'AK Senioren',
-              'AkW 13/14', 'AkW 15/16', 'AkW 17/18', 'AkW offen', 'AkW Senioren']
+              'AkW 11/12', 'AkW 13/14', 'AkW 15/16', 'AkW 17/18', 'AkW offen', 'AkW Senioren']
 
 def sort(filename):
     # Get sheet
