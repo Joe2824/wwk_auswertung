@@ -24,7 +24,7 @@
 
 1. Repo clonen
    ```sh
-   git clone https://github.com/github_username/repo_name.git
+   git clone https://github.com/Joe2824/wwk_auswertung
    ```
 3. Python requirements installieren
    ```sh
